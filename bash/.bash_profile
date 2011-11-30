@@ -1,6 +1,3 @@
-PS1="[\W] ッ"
-
-
 ##
 # Your previous /Users/abhinav/.bash_profile file was backed up as /Users/abhinav/.bash_profile.macports-saved_2011-05-11_at_17:20:23
 ##
@@ -34,3 +31,26 @@ alias e='vim'
 alias wget='wget --no-check-certificate'
 alias evim='e ~/.vimrc'
 alias ebash='e ~/.bash_profile'
+
+export PS1="[\W] → "
+export PS1="\[\e[1;31m\][\W] → \[\e[0m\]"
+
+alias ls='ls -la'
+alias rm='rm -rf'
+alias scr='scp -r'
+alias du='du -sh'
+
+alias e='vim'
+alias ebash='vim ~/.bash_profile'
+alias evim='vim ~/.vimrc'
+alias egit='vim ~/.gitconfig'
+alias einput='vim ~/.inputrc'
+
+##
+# Your previous /Users/abhinav/.bash_profile file was backed up as /Users/abhinav/.bash_profile.macports-saved_2011-11-26_at_21:20:22
+##
+
+# MacPorts Installer addition on 2011-11-26_at_21:20:22: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
