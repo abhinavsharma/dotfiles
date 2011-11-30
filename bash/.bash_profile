@@ -26,25 +26,30 @@ export GOARCH=386
 export GOBIN=$HOME/bin
 export PATH=$GOBIN:$PATH
 
-alias tu='tar -zxvf'
-alias e='vim'
-alias wget='wget --no-check-certificate'
-alias evim='e ~/.vimrc'
-alias ebash='e ~/.bash_profile'
-
+# prompt and color
 export PS1="[\W] → "
 export PS1="\[\e[1;31m\][\W] → \[\e[0m\]"
 
-alias ls='ls -la'
+# override basic commands
+alias ls='ls -lah'
 alias rm='rm -rf'
 alias scr='scp -r'
 alias du='du -sh'
 
+# quick editing and most used apps
 alias e='vim'
 alias ebash='vim ~/.bash_profile'
 alias evim='vim ~/.vimrc'
 alias egit='vim ~/.gitconfig'
 alias einput='vim ~/.inputrc'
+alias tu='tar -zxvf'
+alias wget='wget --no-check-certificate'
+
+# git
+alias gm='git commit -am'
+
+# source things
+alias reload='source ~/.bash_profile'
 
 ##
 # Your previous /Users/abhinav/.bash_profile file was backed up as /Users/abhinav/.bash_profile.macports-saved_2011-11-26_at_21:20:22
