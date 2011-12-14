@@ -6,6 +6,7 @@
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+export PATH=$PATH:/opt/play-1.2
 
 # Setting PATH for EPD-7.0-2
 # The orginal version is saved in .bash_profile.pysave
